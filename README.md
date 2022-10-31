@@ -20,4 +20,8 @@ You can specify the AWS Credentials prodile to use with the `--profile <PROFILE_
 `aws iam list-users`
 
 
+## S3 
 
+Delete an empty bucket `aws s3api delete-bucket --bucket <bucket-name>`
+
+Delete a bucket and all objects in it `aws s3 rb s3://<bucket-name> --force  --profile personal`
